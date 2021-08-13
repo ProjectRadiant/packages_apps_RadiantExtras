@@ -1,0 +1,18 @@
+android_app_import {
+    name: "RadiantExtras",
+    apk: "app/RadiantExtras/RadiantExtras.apk",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    required: [
+        "com.maitreya.nezukoextras",
+    ],
+}
+
+prebuilt_etc {
+    name: "com.maitreya.nezukoextras",
+    sub_dir: "permissions",
+    src: "etc/permissions/com.maitreya.nezukoextras.xml",
+    filename_from_src: true,
+}
